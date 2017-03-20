@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Dskills";
+}
+
+<h2>Development skills</h2>
+
+@using (Html.BeginForm("Submitdata", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+<div>
+    <table>
+
+        <tr>
+            <td><h3>Coding skills</h3></td>
+            <td>
+                <input type="radio" name="rating" value="Outstanding" checked>Outstanding<br>
+                <input type="radio" name="rating" value="Above Expectation"> Above Expectation<br>
+                <input type="radio" name="rating" value="Meets Expectation">Meets Expectation<br>
+                <input type="radio" name="rating" value="Needs Improvement">Needs Improvement<br>
+                <input type="radio" name="rating" value="Unsatisfactory">Unsatisfactory<br><br><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Troubleshooting skills</h3></td>
+            <td>
+                <input type="radio" name="rating" value="Outstanding" checked>Outstanding<br>
+                <input type="radio" name="rating" value="Above Expectation"> Above Expectation<br>
+                <input type="radio" name="rating" value="Meets Expectation">Meets Expectation<br>
+                <input type="radio" name="rating" value="Needs Improvement">Needs Improvement<br>
+                <input type="radio" name="rating" value="Unsatisfactory">Unsatisfactory<br><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>Quality Assurance</h3></td>
+            <td>
+                <input type="radio" name="rating" value="Outstanding" checked>Outstanding<br>
+                <input type="radio" name="rating" value="Above Expectation"> Above Expectation<br>
+                <input type="radio" name="rating" value="Meets Expectation">Meets Expectation<br>
+                <input type="radio" name="rating" value="Needs Improvement">Needs Improvement<br>
+                <input type="radio" name="rating" value="Unsatisfactory">Unsatisfactory<br><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>Time logging</h3></td>
+            <td>
+                <input type="radio" name="rating" value="Outstanding" checked>Outstanding<br>
+                <input type="radio" name="rating" value="Above Expectation"> Above Expectation<br>
+                <input type="radio" name="rating" value="Meets Expectation">Meets Expectation<br>
+                <input type="radio" name="rating" value="Needs Improvement">Needs Improvement<br>
+                <input type="radio" name="rating" value="Unsatisfactory">Unsatisfactory<br><br><br>
+            </td>
+        </tr>
+        </table>
+       <input type="submit" class="btn btn-lg" value="Save" />
+    </div>
+}

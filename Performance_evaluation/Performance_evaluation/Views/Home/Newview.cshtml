@@ -1,0 +1,48 @@
+﻿@model Performance_evaluation.Models.Performance
+@{
+    ViewBag.Title = "Newview";
+}
+
+<h2></h2>
+@using (Html.BeginForm("Technicalskills", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+<div>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" class="btn btn-lg" value="Technical skills" /></td>
+           
+        </tr>
+    </table>
+    
+   
+</div>
+}
+@using (Html.BeginForm("Developerskills", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <div>
+        <table>
+            <tr>
+                <td><input type="submit" class="btn btn-lg" value="Developers Skills" /></td>
+            </tr>
+        </table>
+
+
+    </div>
+}
+@using (Html.BeginForm("Savedata", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <div>
+        <table>
+            <tr>
+                <td><input type="submit" class="btn btn-lg" value="Submit" /></td>
+            </tr>
+        </table>
+
+
+    </div>
+}
+
